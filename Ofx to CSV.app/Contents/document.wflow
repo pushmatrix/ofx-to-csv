@@ -5,7 +5,7 @@
 	<key>AMApplicationBuild</key>
 	<string>330</string>
 	<key>AMApplicationVersion</key>
-	<string>2.2.1</string>
+	<string>2.2.2</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -61,7 +61,7 @@
 					<key>COMMAND_STRING</key>
 					<string>cd ~/Desktop/ofx-to-csv/
 bundle install
-ruby ~/Desktop/ofx-to-csv/ofx-to-csv.rb "$@" &gt;&gt; "$@".csv</string>
+bundle exec ruby ~/Desktop/ofx-to-csv/ofx-to-csv.rb "$@" &gt;&gt; "$@".csv</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -171,12 +171,10 @@ ruby ~/Desktop/ofx-to-csv/ofx-to-csv.rb "$@" &gt;&gt; "$@".csv</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>882.500000:565.000000</string>
+				<string>510.500000:502.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
