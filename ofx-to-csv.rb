@@ -30,7 +30,7 @@ ofx.credit_cards.each do |credit_card|
     payee = ActiveSupport::Inflector.titleize(transaction.payee)
     memo  = ActiveSupport::Inflector.titleize(transaction.memo)
     type  = ActiveSupport::Inflector.titleize(transaction.type)
-    puts [credit_card.number,date, transaction.fit_id, payee, transaction.amount].to_csv
+    puts [credit_card.number,date, transaction.fit_id, payee, -transaction.amount.to_f].to_csv
   end
 
 end
